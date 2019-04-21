@@ -1,0 +1,35 @@
+package know_base.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
+import org.springframework.ws.client.core.WebServiceTemplate;
+
+@Configuration
+public class WebSvcClientConfig {
+
+    @Value("${server_url}")
+    private String url;
+
+    @Bean
+    Jaxb2Marshaller jaxb2Marshaller() {
+
+        Jaxb2Marshaller jaxb2Marshaller = new Jaxb2Marshaller();
+        jaxb2Marshaller.setContextPath("know_base.services");
+
+        return jaxb2Marshaller;
+    }
+
+    @Bean
+    public WebServiceTemplate webServiceTemplate() {
+
+        WebServiceTemplate webServiceTemplate = new WebServiceTemplate();
+        webServiceTemplate.setMarshaller(jaxb2Marshaller());
+        webServiceTemplate.setUnmarshaller(jaxb2Marshaller());
+        webServiceTemplate.setDefaultUri("http://localhost:8088/ws/knowbase.wsdl");
+
+        return webServiceTemplate;
+    }
+
+}

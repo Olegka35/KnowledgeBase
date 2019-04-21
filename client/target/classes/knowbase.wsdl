@@ -1,0 +1,292 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://know_base/services" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://know_base/services" targetNamespace="http://know_base/services">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://know_base/services">
+            <xs:element name="addRecordRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" type="xs:string"/>
+                        <xs:element name="text" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addLabelsRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="recordID" type="xs:integer"/>
+                        <xs:element name="labels" type="tns:arrayOfId"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addFileRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="recordID" type="xs:integer"/>
+                        <xs:element name="fileName" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" name="text" type="xs:unsignedByte"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addLabelRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="label" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getFileRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="recordID" type="xs:integer"/>
+                        <xs:element name="fileName" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="removeLabelRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="labelID" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getLabelsRequest">
+                <xs:complexType>
+                    <xs:sequence> </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getRecordsRequest">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="getRecordsByLabelRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="label" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addRecordResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="addLabelResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getFileResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="text" type="xs:unsignedByte"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getLabelsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="label" type="tns:label"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getRecordsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="records" type="tns:record"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getRecordsByLabelResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="records" type="tns:record"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="response">
+                <xs:complexType>
+                    <xs:sequence> </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="label">
+                <xs:sequence>
+                    <xs:element name="text" type="xs:string"/>
+                    <xs:element name="id" type="xs:integer"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="record">
+                <xs:sequence>
+                    <xs:element name="id" type="xs:integer"/>
+                    <xs:element name="title" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="arrayOfId">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="id" type="xs:integer"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="removeLabelRequest">
+        <wsdl:part element="tns:removeLabelRequest" name="removeLabelRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addFileRequest">
+        <wsdl:part element="tns:addFileRequest" name="addFileRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getLabelsRequest">
+        <wsdl:part element="tns:getLabelsRequest" name="getLabelsRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addRecordResponse">
+        <wsdl:part element="tns:addRecordResponse" name="addRecordResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addRecordRequest">
+        <wsdl:part element="tns:addRecordRequest" name="addRecordRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addLabelResponse">
+        <wsdl:part element="tns:addLabelResponse" name="addLabelResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addLabelRequest">
+        <wsdl:part element="tns:addLabelRequest" name="addLabelRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getRecordsByLabelRequest">
+        <wsdl:part element="tns:getRecordsByLabelRequest" name="getRecordsByLabelRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getLabelsResponse">
+        <wsdl:part element="tns:getLabelsResponse" name="getLabelsResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getRecordsByLabelResponse">
+        <wsdl:part element="tns:getRecordsByLabelResponse" name="getRecordsByLabelResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getFileResponse">
+        <wsdl:part element="tns:getFileResponse" name="getFileResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addLabelsRequest">
+        <wsdl:part element="tns:addLabelsRequest" name="addLabelsRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getRecordsRequest">
+        <wsdl:part element="tns:getRecordsRequest" name="getRecordsRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getFileRequest">
+        <wsdl:part element="tns:getFileRequest" name="getFileRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getRecordsResponse">
+        <wsdl:part element="tns:getRecordsResponse" name="getRecordsResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="KBPort">
+        <wsdl:operation name="removeLabel">
+            <wsdl:input message="tns:removeLabelRequest" name="removeLabelRequest"> </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="addFile">
+            <wsdl:input message="tns:addFileRequest" name="addFileRequest"> </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getLabels">
+            <wsdl:input message="tns:getLabelsRequest" name="getLabelsRequest"> </wsdl:input>
+            <wsdl:output message="tns:getLabelsResponse" name="getLabelsResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addRecord">
+            <wsdl:input message="tns:addRecordRequest" name="addRecordRequest"> </wsdl:input>
+            <wsdl:output message="tns:addRecordResponse" name="addRecordResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addLabel">
+            <wsdl:input message="tns:addLabelRequest" name="addLabelRequest"> </wsdl:input>
+            <wsdl:output message="tns:addLabelResponse" name="addLabelResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRecordsByLabel">
+            <wsdl:input message="tns:getRecordsByLabelRequest" name="getRecordsByLabelRequest"> </wsdl:input>
+            <wsdl:output message="tns:getRecordsByLabelResponse" name="getRecordsByLabelResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getFile">
+            <wsdl:input message="tns:getFileRequest" name="getFileRequest"> </wsdl:input>
+            <wsdl:output message="tns:getFileResponse" name="getFileResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addLabels">
+            <wsdl:input message="tns:addLabelsRequest" name="addLabelsRequest"> </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getRecords">
+            <wsdl:input message="tns:getRecordsRequest" name="getRecordsRequest"> </wsdl:input>
+            <wsdl:output message="tns:getRecordsResponse" name="getRecordsResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="KBPortSoap11" type="tns:KBPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="removeLabel">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="removeLabelRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="addFile">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="addFileRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getLabels">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getLabelsRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getLabelsResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addRecord">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="addRecordRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="addRecordResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addLabel">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="addLabelRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="addLabelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getRecordsByLabel">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getRecordsByLabelRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getRecordsByLabelResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getFile">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getFileRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getFileResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="addLabels">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="addLabelsRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getRecords">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getRecordsRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getRecordsResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="KBPortService">
+        <wsdl:port binding="tns:KBPortSoap11" name="KBPortSoap11">
+            <soap:address location="http://localhost:8088/ws"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

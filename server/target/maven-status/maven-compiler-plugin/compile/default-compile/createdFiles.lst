@@ -1,0 +1,15 @@
+know_base\services\package-info.class
+know_base\services\AddLabelRequest.class
+know_base\services\AddRecordRequest.class
+know_base\services\AddRecordResponse.class
+know_base\services\GetRecordsRequest.class
+know_base\services\ArrayOfId.class
+know_base\services\GetLabelsRequest.class
+know_base\services\GetRecordsResponse.class
+know_base\services\AddFileRequest.class
+know_base\services\RemoveLabelRequest.class
+know_base\services\Record.class
+know_base\services\AddLabelsRequest.class
+know_base\services\Response.class
+know_base\services\GetFileResponse.class
+know_base\services\GetRecordsByLabelRequest.class

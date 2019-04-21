@@ -1,0 +1,146 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://know_base/services"
+           targetNamespace="http://know_base/services"
+           elementFormDefault="qualified">
+
+    <xs:element name="addRecordRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string" />
+                <xs:element name="text" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addLabelsRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="recordID" type="xs:integer" />
+                <xs:element name="labels" type="tns:arrayOfId" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addFileRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="recordID" type="xs:integer" />
+                <xs:element name="fileName" type="xs:string" />
+                <xs:element name="text" type="xs:unsignedByte" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addLabelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="label" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getFileRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="recordID" type="xs:integer" />
+                <xs:element name="fileName" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="removeLabelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="labelID" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getLabelsRequest">
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getRecordsRequest">
+        <xs:complexType/>
+    </xs:element>
+
+    <xs:element name="getRecordsByLabelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="label" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addRecordResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="addLabelResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getFileResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="text" type="xs:unsignedByte" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getLabelsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="label" type="tns:label" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getRecordsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="records" type="tns:record" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="response">
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="label">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string" />
+            <xs:element name="id" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="record">
+        <xs:sequence>
+            <xs:element name="id" type="xs:integer" />
+            <xs:element name="title" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="arrayOfId">
+        <xs:sequence>
+            <xs:element name="id" type="xs:integer" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
