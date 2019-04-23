@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="knowledge_base_client:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>knowledge_base_client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="knowledge_base_client-1.0.war">
+      <element id="artifact" artifact-name="knowledge_base_client:war exploded" />
+    </root>
+  </artifact>
+</component>
