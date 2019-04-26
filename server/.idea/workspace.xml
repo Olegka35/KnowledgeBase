@@ -4,7 +4,29 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/know_base/endpoint/KnowledgeBaseEndpoint.java" line="79" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bbc445f-31fb-40d6-bf44-7e145e25e256" name="Default Changelist" comment="" />
+    <list default="true" id="8bbc445f-31fb-40d6-bf44-7e145e25e256" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/know_base/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/know_base/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/know_base/services/KnowBaseServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/know_base/services/KnowBaseServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/ClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/ClientApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/controller/KBController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/controller/KBController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddFileRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddFileRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelsRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddLabelsRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddRecordRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddRecordRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddRecordResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/AddRecordResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/GetFileRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/GetFileRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/GetRecordsByLabelRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/GetRecordsByLabelRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/KnowBaseServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/KnowBaseServiceClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/Label.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/Label.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/target/classes/know_base/services/RemoveLabelRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/target/classes/know_base/services/RemoveLabelRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/knowbase.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/knowbase.xsd" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +38,13 @@
     <session id="-1631887383">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,13 +64,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="409" />
-          <entry key="xsd" value="1" />
+          <entry key="xsd" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="409" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -56,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/know_base/endpoint/KnowledgeBaseEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+            <state relative-caret-position="742">
+              <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -65,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/know_base/repo/DataRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="850">
               <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
               <folding>
                 <element signature="e#1950#1951#0" expanded="true" />
@@ -78,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/knowbase.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="56" column="17" selection-start-line="50" selection-start-column="16" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
         </entry>
@@ -87,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/know_base/BootApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -100,13 +124,16 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/knowbase.xsd" />
         <option value="$PROJECT_DIR$/src/main/java/know_base/model/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/know_base/repo/DataRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/know_base/endpoint/KnowledgeBaseEndpoint.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/knowbase.xsd" />
       </list>
     </option>
   </component>
@@ -115,12 +142,12 @@
     <option name="width" value="1920" />
     <option name="height" value="1042" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,6 +207,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -287,7 +315,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -303,27 +331,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/know_base/BootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/know_base/model/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/knowbase.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="56" column="17" selection-start-line="50" selection-start-column="16" selection-end-line="56" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -334,9 +345,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/know_base/services/GetLabelsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/know_base/repo/DataRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="850">
           <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
           <folding>
             <element signature="e#1950#1951#0" expanded="true" />
@@ -345,17 +363,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/know_base/services/GetLabelsResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/know_base/BootApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="153">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/knowbase.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/know_base/endpoint/KnowledgeBaseEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+        <state relative-caret-position="742">
+          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
         </state>
       </provider>
     </entry>

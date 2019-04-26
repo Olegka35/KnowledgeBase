@@ -99,12 +99,28 @@ public class KnowBaseServiceClient {
         return recordsMap;
     }
 
+    public Map<BigInteger, String> getLabels() {
+        Map<BigInteger, String> map = new HashMap<>();
+
+        ObjectFactory factory = new ObjectFactory();
+
+        GetLabelsRequest req = factory.createGetLabelsRequest();
+
+        GetLabelsResponse resp = (GetLabelsResponse) webServiceTemplate.marshalSendAndReceive(req);
+        List<Label> labels = resp.getLabel();
+        for(Label label: labels) {
+            map.put(label.id, label.text);
+        }
+        return map;
+    }
+
     public Map<BigInteger, String> getRecordsByLabel(String label) {
         Map<BigInteger, String> recordsMap = new HashMap<>();
 
         ObjectFactory factory = new ObjectFactory();
 
         GetRecordsByLabelRequest req = factory.createGetRecordsByLabelRequest();
+        req.setLabel(label);
 
         GetRecordsResponse resp = (GetRecordsResponse) webServiceTemplate.marshalSendAndReceive(req);
         List<Record> records = resp.getRecords();
